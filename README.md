@@ -42,8 +42,11 @@ This repository provides the code and data for evaluating **LLM-generated ontolo
 
 ## Basic Usage
 
-1. **Extract Concepts/Triples**  
-   ```bash
-   python extract_ontology_concepts.py --input data/llm_concepts/... --output results/...
-   python extract_ontology_triples.py --input data/llm_triples/... --output results/...
 
+python ontology_concept_matching.py --llm_concepts results/llm_concepts.json \
+                                    --ref_concepts results/bioportal_concepts.json \
+                                    --output results/concept_matching_summary/...
+
+python ontology_triple_matching.py --llm_triples results/llm_triples.csv \
+                                   --ref_triples results/bioportal_triples.csv \
+                                   --output results/triple_matching_summary/...
