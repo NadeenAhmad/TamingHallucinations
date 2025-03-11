@@ -1,0 +1,170 @@
+Subject,Predicate,Object
+PhysiochemicalParameters,hasOxygenContent,float
+EukaryoticOrganism,isBehaviorAffectedBy,CarbonateDissortation
+MicrobialCommunity,comparedTo,AbovegroundEnvironment
+aquifer,hasAquiferID,string
+GroundwaterContamination,hasGroundwaterContaminationLevel,float
+SamplingMethod,hasSampleID,string
+RechargeRate,hasRechargeRateValue,float
+PhysiochemicalParameters,changesWith,AquiferSupply
+ChemicalComposition,hasChemicalConcentration,float
+PhysiochemicalParameters,hasDOValue,float
+MicrobialCommunityStructure,hasCommunityDiversityIndex,float
+CarbonateDissortation,affectsBehaviorOf,EukaryoticOrganism
+MicrobialCommunity,hasCellCount,integer
+SamplingMethod,hasSamplingLocation,string
+ChemicalComposition,hasAquiferWith,aquifer
+SamplingMethod,hasSamplingDate,date
+MicrobialFunctionalGuild,isDominantFunctionalGuildOf,aquifer
+PhysiochemicalParameters,hasConductivityValue,float
+AbovegroundEnvironment,isComparedTo,MicrobialCommunity
+MicrobialBiosample,isModeledAfter,GroundwaterMicroorganism
+SubsurfaceEcosystem,isInstructedBy,Peptide
+PristineAquifer,isDominatedIn,BiogeochemicalProcess
+aquifer,hasDominantFunctionalGuild,MicrobialFunctionalGuild
+aquifer,isPresentIn,aquifer
+PhysiochemicalParameters,hasTemperature,float
+MicrobialSpecies,hasHabitatDistribution,aquifer
+Precipitation,hasPrecipitationValue,float
+MicrobialCommunity,hasNitrogenContent,float
+aquifer,isHabitatDistributionFor,MicrobialSpecies
+DOCComposition,hasDOCConcentration,float
+MicrobialDiversity,hasBiodiversityIndex,float
+AquiferSupply,hasChangedBy,PhysiochemicalParameters
+SamplingMethod,hasSamplingTemperature,float
+GeochemicalProcess,hasCarbonIsotopeRatio,float
+PhysiochemicalParameters,hasPHValue,float
+PhysiochemicalParameters,hasConductivity,float
+SamplingMethod,hasComparison,EnvironmentalStudy
+MicrobialCommunity,hasMicrobialCommunityID,string
+Precipitation,hasPrecipitationDate,date
+SamplingMethod,hasSamplingDepth,float
+GroundwaterVelocity,hasGroundwaterVelocityValue,float
+GeochemicalProcess,hasDenitrificationRate,float
+aquifer,inAquiferWith,ChemicalComposition
+GroundwaterProtection,isUsedFor,SamplingMethod
+aquadiva,is a,Ontology
+hasDominantFunctionalGuild,is a,ObjectProperty
+presentIn,is a,ObjectProperty
+contributeTo,is a,ObjectProperty
+hasHabitatDistribution,is a,ObjectProperty
+inAquiferWith,is a,ObjectProperty
+comparedTo,is a,ObjectProperty
+variesBetween,is a,ObjectProperty
+affects,is a,ObjectProperty
+interactsWith,is a,ObjectProperty
+foundIn,is a,ObjectProperty
+influences,is a,ObjectProperty
+affectsBehaviorOf,is a,ObjectProperty
+changesWith,is a,ObjectProperty
+playsRoleIn,is a,ObjectProperty
+isDominantFunctionalGuildOf,is a,ObjectProperty
+isPresentIn,is a,ObjectProperty
+isContributedBy,is a,ObjectProperty
+isHabitatDistributionFor,is a,ObjectProperty
+hasAquiferWith,is a,ObjectProperty
+isComparedTo,is a,ObjectProperty
+variedBy,is a,ObjectProperty
+isAffectedBy,is a,ObjectProperty
+hasInteractionWith,is a,ObjectProperty
+isFoundIn,is a,ObjectProperty
+isInfluencedBy,is a,ObjectProperty
+isBehaviorAffectedBy,is a,ObjectProperty
+hasChangedBy,is a,ObjectProperty
+isRoleOf,is a,ObjectProperty
+isDominatedIn,is a,ObjectProperty
+isInstructedBy,is a,ObjectProperty
+isPartOf,is a,ObjectProperty
+isImpactedBy,is a,ObjectProperty
+hasRole,is a,ObjectProperty
+isUsedFor,is a,ObjectProperty
+hasComparison,is a,ObjectProperty
+isModeledAfter,is a,ObjectProperty
+isSimilarTo,is a,ObjectProperty
+hasPart,is a,ObjectProperty
+associatedWith,is a,ObjectProperty
+dominatesIn,is a,ObjectProperty
+maintains,is a,ObjectProperty
+isSimilarTo,is a,ReflexiveProperty
+isPartOf,is a,ReflexiveProperty
+interactsWith,is a,ReflexiveProperty
+affects,is a,ReflexiveProperty
+isInfluencedBy,is a,ReflexiveProperty
+hasRole,is a,ReflexiveProperty
+hasPart,is a,ReflexiveProperty
+associatedWith,is a,ReflexiveProperty
+isModeledAfter,is a,ReflexiveProperty
+dominatesIn,is a,ReflexiveProperty
+maintains,is a,ReflexiveProperty
+isImpactedBy,is a,ReflexiveProperty
+isSimilarTo,is a,SymmetricProperty
+interactsWith,is a,SymmetricProperty
+isPartOf,is a,SymmetricProperty
+isInfluencedBy,is a,SymmetricProperty
+associatedWith,is a,SymmetricProperty
+isModeledAfter,is a,SymmetricProperty
+isComparedTo,is a,SymmetricProperty
+hasInteractionWith,is a,SymmetricProperty
+hasDominantFunctionalGuild,is a,FunctionalProperty
+inAquiferWith,is a,FunctionalProperty
+hasHabitatDistribution,is a,FunctionalProperty
+isPresentIn,is a,FunctionalProperty
+hasAquiferWith,is a,FunctionalProperty
+affects,is a,FunctionalProperty
+isContributedBy,is a,FunctionalProperty
+isImpactedBy,is a,FunctionalProperty
+associatedWith,is a,FunctionalProperty
+influences,is a,FunctionalProperty
+isModeledAfter,is a,FunctionalProperty
+dominatesIn,is a,FunctionalProperty
+maintains,is a,FunctionalProperty
+isComparedTo,is a,FunctionalProperty
+hasRole,is a,FunctionalProperty
+playsRoleIn,is a,FunctionalProperty
+isPartOf,is a,TransitiveProperty
+affects,is a,TransitiveProperty
+isImpactedBy,is a,TransitiveProperty
+influences,is a,TransitiveProperty
+hasPart,is a,TransitiveProperty
+associatedWith,is a,TransitiveProperty
+isModeledAfter,is a,TransitiveProperty
+dominatesIn,is a,TransitiveProperty
+hasAquiferID,is a,DatatypeProperty
+hasChemicalConcentration,is a,DatatypeProperty
+hasPHValue,is a,DatatypeProperty
+hasOxygenContent,is a,DatatypeProperty
+hasTemperature,is a,DatatypeProperty
+hasConductivity,is a,DatatypeProperty
+hasSampleID,is a,DatatypeProperty
+hasSamplingDate,is a,DatatypeProperty
+hasBiodiversityIndex,is a,DatatypeProperty
+hasRechargeRateValue,is a,DatatypeProperty
+hasPrecipitationValue,is a,DatatypeProperty
+hasGroundwaterVelocityValue,is a,DatatypeProperty
+hasDOCConcentration,is a,DatatypeProperty
+hasDOValue,is a,DatatypeProperty
+hasSamplingDepth,is a,DatatypeProperty
+hasCellCount,is a,DatatypeProperty
+hasCarbonIsotopeRatio,is a,DatatypeProperty
+hasConductivityValue,is a,DatatypeProperty
+hasGroundwaterContaminationLevel,is a,DatatypeProperty
+hasPrecipitationDate,is a,DatatypeProperty
+hasNitrogenContent,is a,DatatypeProperty
+hasDenitrificationRate,is a,DatatypeProperty
+hasCommunityDiversityIndex,is a,DatatypeProperty
+hasSamplingTemperature,is a,DatatypeProperty
+hasMicrobialCommunityID,is a,DatatypeProperty
+hasSamplingLocation,is a,DatatypeProperty
+HainichAquifer,is a,aquifer
+FracturedRockAquifer1,is a,FracturedRockAquifer
+KarstAquifer2,is a,KarstAquifer
+GroundwaterSample1,is a,SamplingMethod
+MicrobialCommunityA,is a,MicrobialCommunity
+MicrobialCommunityB,is a,MicrobialCommunity
+GeochemicalProcess1,is a,GeochemicalProcess
+DOCCompositionSample1,is a,DOCComposition
+PrecipitationEvent1,is a,Precipitation
+RechargeRateSample1,is a,RechargeRate
+GroundwaterVelocitySample1,is a,GroundwaterVelocity
+GroundwaterContamination1,is a,GroundwaterContamination
+MicrobialDiversitySample1,is a,MicrobialDiversity
