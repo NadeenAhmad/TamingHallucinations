@@ -42,7 +42,7 @@ This repository provides the code and data for evaluating **LLM-generated ontolo
 
 ## Basic Usage
 
-
+```bash
 python ontology_concept_matching.py --llm_concepts results/llm_concepts.json \
                                     --ref_concepts results/bioportal_concepts.json \
                                     --output results/concept_matching_summary/...
