@@ -50,3 +50,8 @@ python ontology_concept_matching.py --llm_concepts results/llm_concepts.json \
 python ontology_triple_matching.py --llm_triples results/llm_triples.csv \
                                    --ref_triples results/bioportal_triples.csv \
                                    --output results/triple_matching_summary/...
+
+---
+## **License**
+This project is licensed under the MIT License.
+Please see the paper for additional details on the methodology and findings.
