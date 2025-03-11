@@ -1,0 +1,287 @@
+Subject,Predicate,Object
+SymbioticNitrogenFixation,has_responsibility_of,MicrobialCommunity
+TraceGas,is_consumed_by,MicrobialCommunity
+NitrogenFixation,fixesNitrogen,Nitrogen
+NitrogenFixationProcess,fixesNitrogen,Nitrogen
+Soil,hasSoilTemperature,float
+CarbonCycleProcess,has_contribution_from,BiogeochemicalProcess
+EnvironmentalCondition,influences,BiogeochemicalProcess
+EnvironmentalFactor,influences,BiogeochemicalProcess
+Ecosystem,has_process,BiogeochemicalProcess
+TraceGas,is_produced_by,BiogeochemicalProcess
+Soil,hasSoilMoisture,float
+Soil,hasMoistureContent,float
+Isotope,hasIsotopicRatio,float
+EnvironmentalMaterial,is_location_for,BiogeochemicalProcess
+Isotope,has_isotopic_ratio,float
+EnvironmentalSample,hasTimeMeasured,dateTime
+Water,hasSalinity,float
+Soil,hasCarbonContent,float
+EnvironmentalMaterial,hasCarbonContent,float
+BiogeochemicalProcess,affectsWaterQuality,Water
+OrganicMatter,hasCarbonToNitrogenRatio,float
+DenitrificationProcess,releasesNitrogen,Nitrogen
+AnaerobicDecomposition,releasesMethane,TraceGas
+Water,haspHLevel,float
+Soil,haspHLevel,float
+EnvironmentalMaterial,haspHLevel,float
+Water,hasDissolvedOxygen,float
+BiogeochemicalProcess,produces,Substance
+BiogeochemicalProcess,produces,TraceGas
+BiogeochemicalProcess,occursIn,EnvironmentalMaterial
+CarbonCycleProcess,consumesCarbon,OrganicCarbon
+CO2FixationProcess,fixesCarbon,Carbon
+CO2FixationProcess,fixesCarbon,OrganicCarbon
+CO2Fixation,fixesCarbon,Carbon
+CO2Fixation,fixesCarbon,OrganicCarbon
+Soil,hasNutrientContent,float
+MicrobialCommunity,mediatesBiogeochemicalProcess,BiogeochemicalProcess
+MicrobialCommunity,is_responsible_for,SymbioticNitrogenFixation
+Soil,has_ph,float
+EnvironmentalMaterial,has_concentration,float
+BiogeochemicalProcess,is_related_to,CarbonSequestration
+Ecosystem,is_part_of,Biome
+EnvironmentalSample,hasMass,float
+EnvironmentalMaterial,is_variation_of,BiogeochemicalProcess
+BiogeochemicalProcess,varies_between,EnvironmentalMaterial
+BiologicalEntity,plays_role_in,BiogeochemicalProcess
+BiogeochemicalProcess,is_role_of,BiologicalEntity
+Soil,hasNitrogenContent,float
+EnvironmentalMaterial,hasNitrogenContent,float
+DecompositionProcess,releases,CarbonDioxide
+EnvironmentalSample,hasMeasuredDepth,float
+DissolvedCarbon,is_transport_to,EnvironmentalMaterial
+Ecosystem,hasPrecipitation,float
+Water,is_site_for,BiogeochemicalProcess
+MicrobialCommunity,isInvolvedIn,BiogeochemicalProcess
+Ecosystem,hasBiogeochemicalProcess,BiogeochemicalProcess
+GroundwaterSystem,hasFlowRate,float
+MicrobialCommunity,mediatesCarbonCycle,CarbonCycleProcess
+BiogeochemicalProcess,is_affected_by,EnvironmentalFactor
+BiogeochemicalProcess,is_influenced_by,EnvironmentalCondition
+NitrogenCycleProcess,transformsNitrogen,InorganicNitrogen
+BiogeochemicalProcess,is_traced_by,Isotope
+Soil,hasSoilpH,float
+BiogeochemicalProcess,occursInAquaticSystem,AquaticEcosystem
+Ecosystem,isPartOf,Biome
+Water,hasConductivity,float
+BiogeochemicalProcess,occurs_in,EnvironmentalMaterial
+EnvironmentalFactor,contributesTo,EcosystemProcess
+MicrobialCommunity,participatesInIronCycle,IronCycleProcess
+EnvironmentalFactor,influencesMicrobialActivity,MicrobialCommunity
+MicrobialCommunity,mediatesNutrientCycle,Nutrient
+BiogeochemicalProcess,occursInSoilLayer,SoilLayer
+Soil,has_microbe,MicrobialCommunity
+Ecosystem,actsAsCarbonSink,CarbonSequestration
+EnvironmentalSample,hasTemperature,float
+EnvironmentalMaterial,hasTemperature,float
+EnvironmentalFactor,affects,BiogeochemicalProcess
+BiogeochemicalProcess,releasesTraceGas,TraceGas
+EnvironmentalMaterial,has_transported_from,DissolvedCarbon
+EnvironmentalFactor,influencesNutrientFlux,NutrientFlux
+TraceGas,hasTraceGasConcentration,float
+MicrobialCommunity,consumes,TraceGas
+NitrogenFixation,fixes_nitrogen,Nitrogen
+BiogeochemicalProcess,occursDuring,SeasonalCycle
+GroundwaterSystem,hasHydrologicalConnectivity,AquaticEcosystem
+WetlandEcosystem,hasMethaneEmissionRate,float
+BiogeochemicalProcess,influencesNutrientAvailability,Nutrient
+BiogeochemicalProcess,producesTraceGas,TraceGas
+EnvironmentalMaterial,hasConcentration,float
+BiogeochemicalProcess,has_insight_from,Isotope
+OrganicMatter,hasCNRatio,float
+BiogeochemicalProcess,contributes_to,CarbonCycleProcess
+MicrobialCommunity,mediatesSulfurCycle,SulfurCycleProcess
+Isotope,traces,BiogeochemicalProcess
+Water,hasNitrateConcentration,float
+CarbonSequestration,has_relationship_with,BiogeochemicalProcess
+Water,hasPhosphateConcentration,float
+DenitrificationProcess,releasesNitrogenGas,Nitrogen
+EnvironmentalFactor,influencesWaterQuality,Water
+CarbonSequestration,has_changes_reflected_by,IsotopicShifts
+IsotopicShifts,reflects_changes_in,CarbonSequestration
+Isotope,provides_insight_into,BiogeochemicalProcess
+cncycle,is a,Ontology
+plays_role_in,is a,ObjectProperty
+occurs_in,is a,ObjectProperty
+contributes_to,is a,ObjectProperty
+affects,is a,ObjectProperty
+influences,is a,ObjectProperty
+is_related_to,is a,ObjectProperty
+is_transport_to,is a,ObjectProperty
+produces,is a,ObjectProperty
+consumes,is a,ObjectProperty
+varies_between,is a,ObjectProperty
+traces,is a,ObjectProperty
+is_responsible_for,is a,ObjectProperty
+reflects_changes_in,is a,ObjectProperty
+provides_insight_into,is a,ObjectProperty
+is_role_of,is a,ObjectProperty
+is_location_for,is a,ObjectProperty
+has_contribution_from,is a,ObjectProperty
+is_affected_by,is a,ObjectProperty
+is_influenced_by,is a,ObjectProperty
+has_relationship_with,is a,ObjectProperty
+has_transported_from,is a,ObjectProperty
+is_produced_by,is a,ObjectProperty
+is_consumed_by,is a,ObjectProperty
+is_variation_of,is a,ObjectProperty
+is_traced_by,is a,ObjectProperty
+has_responsibility_of,is a,ObjectProperty
+has_changes_reflected_by,is a,ObjectProperty
+has_insight_from,is a,ObjectProperty
+is_part_of,is a,ObjectProperty
+has_process,is a,ObjectProperty
+has_microbe,is a,ObjectProperty
+is_site_for,is a,ObjectProperty
+releases,is a,ObjectProperty
+fixes_nitrogen,is a,ObjectProperty
+hasBiogeochemicalProcess,is a,ObjectProperty
+occursIn,is a,ObjectProperty
+producesTraceGas,is a,ObjectProperty
+influencesNutrientAvailability,is a,ObjectProperty
+consumesCarbon,is a,ObjectProperty
+fixesNitrogen,is a,ObjectProperty
+releasesNitrogenGas,is a,ObjectProperty
+influencesMicrobialActivity,is a,ObjectProperty
+fixesCarbon,is a,ObjectProperty
+releasesNitrogen,is a,ObjectProperty
+affectsWaterQuality,is a,ObjectProperty
+mediatesNutrientCycle,is a,ObjectProperty
+hasHydrologicalConnectivity,is a,ObjectProperty
+actsAsCarbonSink,is a,ObjectProperty
+releasesTraceGas,is a,ObjectProperty
+isInvolvedIn,is a,ObjectProperty
+mediatesBiogeochemicalProcess,is a,ObjectProperty
+influencesWaterQuality,is a,ObjectProperty
+isPartOf,is a,ObjectProperty
+mediatesCarbonCycle,is a,ObjectProperty
+influencesNutrientFlux,is a,ObjectProperty
+occursDuring,is a,ObjectProperty
+transformsNitrogen,is a,ObjectProperty
+occursInSoilLayer,is a,ObjectProperty
+contributesTo,is a,ObjectProperty
+occursInAquaticSystem,is a,ObjectProperty
+mediatesSulfurCycle,is a,ObjectProperty
+participatesInIronCycle,is a,ObjectProperty
+releasesMethane,is a,ObjectProperty
+has_concentration,is a,DatatypeProperty
+has_isotopic_ratio,is a,DatatypeProperty
+has_ph,is a,DatatypeProperty
+hasConcentration,is a,DatatypeProperty
+hasIsotopicRatio,is a,DatatypeProperty
+haspHLevel,is a,DatatypeProperty
+hasTemperature,is a,DatatypeProperty
+hasMeasuredDepth,is a,DatatypeProperty
+hasTimeMeasured,is a,DatatypeProperty
+hasMass,is a,DatatypeProperty
+hasCarbonContent,is a,DatatypeProperty
+hasNitrogenContent,is a,DatatypeProperty
+hasFlowRate,is a,DatatypeProperty
+hasConductivity,is a,DatatypeProperty
+hasSalinity,is a,DatatypeProperty
+hasDissolvedOxygen,is a,DatatypeProperty
+hasTraceGasConcentration,is a,DatatypeProperty
+hasMoistureContent,is a,DatatypeProperty
+hasNutrientContent,is a,DatatypeProperty
+hasPrecipitation,is a,DatatypeProperty
+hasPhosphateConcentration,is a,DatatypeProperty
+hasNitrateConcentration,is a,DatatypeProperty
+hasSoilTemperature,is a,DatatypeProperty
+hasCNRatio,is a,DatatypeProperty
+hasSoilMoisture,is a,DatatypeProperty
+hasMethaneEmissionRate,is a,DatatypeProperty
+hasCarbonToNitrogenRatio,is a,DatatypeProperty
+hasSoilpH,is a,DatatypeProperty
+BeechForest1,is a,BeechForest
+BeechForestGermany,is a,BeechForest
+GroundwaterSystem1,is a,GroundwaterSystem
+CO2FixationPathway1,is a,CO2FixationPathway
+CO2FixationAmazon,is a,CO2FixationPathway
+Rubisco1,is a,Rubisco
+NitrogenIsotope15,is a,NitrogenIsotope
+plays_role_in,is a,ReflexiveProperty
+occurs_in,is a,ReflexiveProperty
+contributes_to,is a,ReflexiveProperty
+affects,is a,ReflexiveProperty
+influences,is a,ReflexiveProperty
+is_related_to,is a,ReflexiveProperty
+is_transport_to,is a,ReflexiveProperty
+produces,is a,ReflexiveProperty
+consumes,is a,ReflexiveProperty
+varies_between,is a,ReflexiveProperty
+traces,is a,ReflexiveProperty
+is_responsible_for,is a,ReflexiveProperty
+reflects_changes_in,is a,ReflexiveProperty
+provides_insight_into,is a,ReflexiveProperty
+is_related_to,is a,SymmetricProperty
+affects,is a,SymmetricProperty
+is_influenced_by,is a,SymmetricProperty
+contributes_to,is a,SymmetricProperty
+varies_between,is a,SymmetricProperty
+is_responsible_for,is a,SymmetricProperty
+plays_role_in,is a,SymmetricProperty
+reflects_changes_in,is a,SymmetricProperty
+provides_insight_into,is a,SymmetricProperty
+traces,is a,SymmetricProperty
+is_related_to,is a,FunctionalProperty
+plays_role_in,is a,FunctionalProperty
+occurs_in,is a,FunctionalProperty
+contributes_to,is a,FunctionalProperty
+is_responsible_for,is a,FunctionalProperty
+provides_insight_into,is a,FunctionalProperty
+traces,is a,FunctionalProperty
+reflects_changes_in,is a,FunctionalProperty
+influences,is a,FunctionalProperty
+is_transport_to,is a,FunctionalProperty
+affects,is a,FunctionalProperty
+produces,is a,FunctionalProperty
+consumes,is a,FunctionalProperty
+hasConcentration,is a,FunctionalProperty
+hasIsotopicRatio,is a,FunctionalProperty
+haspHLevel,is a,FunctionalProperty
+contributes_to,is a,TransitiveProperty
+occurs_in,is a,TransitiveProperty
+influences,is a,TransitiveProperty
+is_responsible_for,is a,TransitiveProperty
+affects,is a,TransitiveProperty
+reflects_changes_in,is a,TransitiveProperty
+produces,is a,TransitiveProperty
+traces,is a,TransitiveProperty
+plays_role_in,is a,TransitiveProperty
+is_related_to,is a,TransitiveProperty
+AmazonRainforest,is a,ForestEcosystem
+BorealForest,is a,ForestEcosystem
+SucculentKarooEcoregion,is a,DesertEcosystem
+GreatVictoriaDesert,is a,DesertEcosystem
+AmazonForestSoil,is a,Soil
+BeechForestSoil,is a,Soil
+RiparianZoneSoil,is a,Soil
+KarstGroundwater,is a,Water
+NitrogenFixationBeech,is a,NitrogenFixation
+AmmoniaOxidationAquifer,is a,AmmoniaOxidation
+DenitrificationRiparianZone,is a,Denitrification
+AmazonSoilSample,is a,EnvironmentalSample
+KarstWaterSample,is a,EnvironmentalSample
+BeechForestSoilSample,is a,EnvironmentalSample
+CO2Amazon,is a,TraceGas
+N2OBeechForest,is a,TraceGas
+CH4Wetlands,is a,TraceGas
+AmmoniaOxidizingBacteria,is a,MicrobialCommunity
+DenitrifyingBacteria,is a,MicrobialCommunity
+WetlandMethaneEmitters,is a,MicrobialCommunity
+WetlandMethaneEmitter,is a,MicrobialCommunity
+WetlandMethaneEmittingMicrobes,is a,MicrobialCommunity
+AmmoniaOxidizers,is a,MicrobialCommunity
+AmazonRainforest,is a,TropicalRainforest
+BeechForestGermany,is a,TemperateForest
+KarstGroundwater,is a,FreshwaterEcosystem
+MississippiRiver,is a,FreshwaterEcosystem
+KarstGroundwater,is a,GroundwaterEcosystem
+CO2FixationAmazon,is a,CO2FixationProcess
+SiberianPermafrost,is a,PermafrostEcosystem
+TropicalPeatSwamp,is a,CarbonSequestration
+KarstGroundwater,is a,KarstEcosystem
+Nitrosomonas,is a,AmmoniaOxidizingBacteria
+NorthSea,is a,MarineEcosystem
+KarstAquifer,is a,KarstHydrology
