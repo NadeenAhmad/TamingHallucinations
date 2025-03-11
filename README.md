@@ -7,3 +7,43 @@ This repository provides the code and data for evaluating **LLM-generated ontolo
 ---
 
 ## Repository Structure
+
+### `data/` Directory
+- **`bioportal_concepts/` & `bioportal_triples/`**  
+  Reference ontology data (e.g., exported from BioPortal).
+- **`llm_concepts/` & `llm_triples/`**  
+  Concepts and triples extracted from LLM-generated ontologies.
+
+### `results/` Directory
+- **`concept_matching_summary/`**  
+  CSV summaries of **concept-level** semantic matching results (e.g., `<Ontology>_semantic_matching_results.csv`).
+- **`matched_triples/`**  
+  Text files listing the **matched** Subject–Predicate–Object (SPO) triples per experiment.
+- **`triple_matching_summary/`**  
+  CSV summaries of **triple-level** semantic matching results.
+
+---
+
+## Python Scripts
+
+1. **`extract_ontology_concepts.py`**  
+   Parses ontology files (LLM or reference) to extract concept labels and definitions, then saves them in a structured format.
+
+2. **`extract_ontology_triples.py`**  
+   Extracts SPO relationships (e.g., `subClassOf`, `rdf:type`) from ontology files and stores them as CSV or JSON.
+
+3. **`ontology_concept_matching.py`**  
+   Loads extracted concepts (LLM vs. reference), uses a sentence-transformer to compute similarity scores, and outputs matched vs. unmatched concepts.
+
+4. **`ontology_triple_matching.py`**  
+   Converts SPO triples into sentence-like form, embeds them, and compares to reference triples to identify matches or hallucinations.
+
+---
+
+## Basic Usage
+
+1. **Extract Concepts/Triples**  
+   ```bash
+   python extract_ontology_concepts.py --input data/llm_concepts/... --output results/...
+   python extract_ontology_triples.py --input data/llm_triples/... --output results/...
+
