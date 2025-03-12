@@ -33,10 +33,19 @@ This repository provides the code and data for evaluating **LLM-generated ontolo
    Extracts SPO relationships (e.g., `subClassOf`, `rdf:type`) from ontology files and stores them as CSV or JSON.
 
 3. **`ontology_concept_matching.py`**  
-   Loads extracted concepts (LLM vs. reference), uses a sentence-transformer to compute similarity scores, and outputs matched vs. unmatched concepts.
+   Loads extracted concepts (LLM vs. reference), uses a sentence transformer to compute similarity scores, and outputs matched vs. unmatched concepts.
 
 4. **`ontology_triple_matching.py`**  
    Converts SPO triples into sentence-like form, embeds them, and compares to reference triples to identify matches or hallucinations.
+
+5. **`sample_ontology_matching.ipynb`** 
+This Jupyter notebook provides a practical example of performing concept and triple matching with minimal setup. It walks you through:
+
+Loading sample data: Demonstrates how to read LLM-generated concepts/triples and reference ontology files.
+Generating Embeddings: This shows how to convert concepts/triples into sentence embeddings using a pre-trained model.
+Semantic Matching: Compares LLM-generated items against reference ontologies, applying cosine similarity and thresholds.
+Interpreting Results: Offers a quick overview of matched items vs. flagged “hallucinations,” which you can adapt to fit your own domain needs.
+Users can adapt or extend this notebook for custom ontologies by changing file paths, embedding models, similarity thresholds, or additional post-processing steps.
 
 ---
 
